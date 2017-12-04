@@ -27,15 +27,12 @@ defmodule Day2 do
   end
 
   defp divider(numbers) do
-    [divider, divider] =
+    [divider] =
       for x <- numbers,
           y <- numbers,
           x != y,
-          max = max(x, y),
-          min = min(x, y),
-          div = div(max, min),
-          div * min == max do
-        div
+          rem(x, y) == 0 do
+        div(x, y)
       end
 
     divider

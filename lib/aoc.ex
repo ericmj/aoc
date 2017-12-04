@@ -20,6 +20,8 @@ defmodule Aoc do
   37	1069	166	1037	172	258	1071	90	497	1219	145	1206	143	153	1067	510
   """
 
+  @day3_input "289326"
+
   def day1_basic() do
     Day1.task1(@day1_input)
   end
@@ -34,5 +36,13 @@ defmodule Aoc do
 
   def day2_advanced() do
     Day2.task2(@day2_input)
+  end
+
+  def day3_basic() do
+    Day3.task1(@day3_input)
+  end
+
+  def day3_advanced() do
+    Day3.task2(@day3_input)
   end
 end
