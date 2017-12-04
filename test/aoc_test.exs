@@ -63,6 +63,24 @@ defmodule AocTest do
 
   test "day3 challenge" do
     assert Aoc.day3_basic() == 419
-    assert Aoc.day3_advanced() == 295229
+    assert Aoc.day3_advanced() == 295_229
+  end
+
+  test "day4 basic" do
+    assert Day4.task1("aa bb cc dd ee") == 1
+    assert Day4.task1("aa bb cc dd aa") == 0
+    assert Day4.task1("aa bb cc dd aaa") == 1
+  end
+
+  test "day4 advanced" do
+    assert Day4.task2("abcde fghij") == 1
+    assert Day4.task2("abcde xyz ecdab") == 0
+    assert Day4.task2("a ab abc abd abf abj") == 1
+    assert Day4.task2("oiii ioii iioi iiio") == 0
+  end
+
+  test "day4 challenge" do
+    assert Aoc.day4_basic() == 386
+    assert Aoc.day4_advanced() == 208
   end
 end
