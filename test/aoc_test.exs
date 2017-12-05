@@ -83,4 +83,17 @@ defmodule AocTest do
     assert Aoc.day4_basic() == 386
     assert Aoc.day4_advanced() == 208
   end
+
+  test "day5 basic" do
+    assert Day5.task1("0 3 0 1 -3") == 5
+  end
+
+  test "day5 advanced" do
+    assert Day5.task2("0 3 0 1 -3") == 10
+  end
+
+  test "day5 challenge" do
+    assert Aoc.day5_basic() == 355965
+    assert Aoc.day5_advanced() == 26948068
+  end
 end
